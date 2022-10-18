@@ -1,0 +1,191 @@
+/*
+////////////////////////////////////////////////////
+    Global Style For Esco.net Pages
+////////////////////////////////////////////////////
+*/
+
+/* #333388	#6666aa #aaaacc	#7722bb #eeaa55 */
+
+/* Fonts */
+
+@import url("http://media.esco.net/fonts/klavika/");
+@import url("http://media.esco.net/fonts/roboto/");
+
+
+/* Remove Margins */
+
+body, html {
+    margin: 0;padding: 0;
+}
+
+
+body, table {
+    font-family: 'Roboto', Verdana, Arial, sans-serif;
+}
+
+img {
+    border:0;
+}
+
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', Helvetica, Impact, Arial, sans-serif;
+    color: #333388; margin-top: 0; font-weight: 100;
+}
+
+
+h1{
+/*    font-size:45px;*/font-weight:bold; font-size:26pt;
+}
+
+h1 img{
+    vertical-align: middle; margin-bottom:7px;
+}
+
+a {color: #0090d6;text-decoration: none;}
+a:hover {text-decoration: underline;}
+
+
+.cf {
+    clear: both;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+hr {border:0;border-bottom:2px solid #e4e4ef;}
+
+/* Forums */
+
+input,button,a.btn {font-family:'Clavika';font-size:15px;margin:0;padding: 0;}
+
+
+
+input,textarea,select {
+    text-align: left;
+    height:40px;
+    background-color:#e4e4ef;
+    color: #000;
+    cursor:text;
+    border:0;
+    resize:vertical;
+    font-size:15px;
+    padding-left:10px;
+    padding-right:10px;
+    outline: none;
+}
+input:focus {
+    background-color: #d5d5e6;
+}
+
+select {resize:none;cursor:pointer;}
+
+button, a.btn {
+    outline: none;
+    padding:0;
+    margin:0;
+    height:40px;
+    padding-left:10px;
+    padding-right:10px;
+    
+    cursor:pointer;
+
+    color:#fff;
+    background-color: #333388;
+   
+    border: 0;
+
+    border:0px solid rgb(0, 120, 180);
+    text-transform: uppercase;
+
+}
+
+button:hover,  a.btn:hover {
+    text-decoration: none;
+    background-color: #7722bb;
+    box-shadow: 0px -4px 0px rgba(0, 0, 0, 0.4) inset;
+/*    outline: 4px solid rgba(0,0,0, 0.2);*/
+/*    outline-offset: -4px;*/
+/*        text-shadow: rgba(0,0,0,.2) 0 2px 0;*/
+}
+button:active,  a.btn:active {
+        text-decoration:none;
+        background-color:#621c99;
+/*        text-shadow: rgba(0,0,0,.2) 0 2px 0;*/
+        box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.4) inset;
+        border-color: rgb(0, 80, 130);
+}
+
+a.btn {
+    height:auto;
+    padding:20px;
+}
+
+input[type="file"] {
+    cursor:pointer;
+}
+
+.widget {
+    background-color:#fff;
+    border-bottom:4px solid #9797bf;
+    padding:20px;
+    margin-bottom: 8px;
+}
+
+.widget.nopadding {
+    padding:0;
+}
+
+div.error, div.success {
+    background-color: #f0def2;
+    padding:1px;
+    border-radius: 20px;
+}
+div.success {
+	background-color: #b4f9d3;
+}
+
+
+
+progress {
+    appearance: none; border-style:none;
+}
+
+.wrap {
+    overflow-wrap:break-word;
+    word-wrap: break-word;
+    
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens:auto;
+}
+
+
+a.morelink {
+    background-color:#d5d5fb; color:#333388;
+}
+a.morelink:hover {
+    color:#fff;
+}
+
+code {
+	display:block;
+	font-family: monospace;
+    color: #000;
+	white-space: pre;
+    background-color: #F9F9F9;
+    border: 1px solid #DDD;
+    padding: 1em;
+    line-height: 15px;
+	font-size:12px;
+    font-family: monospace,Courier;
+}

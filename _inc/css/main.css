@@ -1,0 +1,220 @@
+@import url("http://media.esco.net/fonts/klavika/");
+@import url("http://media.esco.net/fonts/roboto/");
+
+body, html{margin: 0;padding: 0;}
+body{
+    background-color: #aaaacc
+}
+
+
+body, table {
+    font-family: 'Roboto', Verdana, Arial, sans-serif;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Clavika', Helvetica, Impact, Arial, sans-serif;
+    color: #333388; margin-top: 0; font-weight: 100;
+}
+
+
+h1{
+    font-size:45px;
+}
+
+a {color: #0090d6;text-decoration: none;}
+a:hover {text-decoration: underline;}
+
+
+
+.main {
+    padding: 0 0 0 0;
+}
+
+.paddedContent {
+    padding:30px;padding-bottom: 50px
+}
+
+#logo, #logo-small {
+    height: 75px;
+    float:left;
+    cursor:pointer;
+}
+
+#logo, #logo span {
+    font-family: Clavika, Helvetica, Impact, Arial, sans-serif;
+    color: white;
+    font-size: 50px;
+    font-weight:900;
+}
+#logo span {
+    color: #eeaa55;
+}
+
+#logo-small{
+     background-size: 40px; height: 40px;
+}
+#logo-small span{
+    font-size:20px; padding-left: 30px;
+}
+
+.header nav, #floating-header nav {
+    float:right;margin-top:24px;margin-left:25px;
+}
+
+.header nav a, #floating-header nav a {
+    margin: 0 0 0 15px;padding: 5px;color:#fff;text-decoration: none;
+}
+
+.header nav a:hover, #floating-header nav a:hover {
+    cursor:pointer;background-color:#fff;color:#000;text-decoration: none;
+}
+
+.header, .footer, #floating-header{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor:default;
+}
+
+.header {
+    background:#333388;padding:15px;
+}
+
+#floating-header{
+    display:none;position:fixed;top:0;left:0;z-index: 9999; width:100%;
+}
+
+#floating-header nav {
+    margin-top:6px;
+}
+
+.footer {
+    padding:15px;
+}
+
+.footer a{
+    color:#000; text-decoration: none; font-size:13px;
+    background-image: url(../img/bullet.gif);
+    background-repeat: no-repeat;
+    padding-left:20px;
+    background-position: 0px 5px;
+}
+
+.footer a:hover{
+/*    color: #eeaa55;*/
+    background-image: url(../img/bullet_hover.gif);
+    text-decoration: none
+}
+
+.footer small{
+    color:#333388;
+}
+
+.footer ul{
+    float:left; list-style: none outside none;  margin: 0;padding:0;margin-right:30px;
+}
+.footer li{
+   padding-left:0;
+}
+.footer li:hover{
+}
+
+.footer li:first-child{
+    padding-bottom: 15px;color:#333388;list-style: none outside none; margin-left:0;
+}
+.footer hr{
+    clear:both; border:0; border-bottom:4px solid #333388;padding-top:20px;
+}
+
+/*
+    Boxes
+*/
+
+.box-container {
+    text-align: justify;
+}
+
+.box {
+    text-align: left;
+    width: auto !important;
+    max-width: 250px;
+    position: relative;
+    display: inline-block;
+}
+
+.stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0px;
+    line-height: 0;
+}
+
+.bluebar {
+    height:100px;background-color:rgb(0, 144, 214);color:white;padding-bottom: 10px;padding-top: 10px
+}
+
+.bluebar h2{
+    color: white; margin-bottom: 5px;
+}
+
+/*
+    Misc
+*/
+.cf {
+    clear: both;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.siteWidth {
+    width: 1000px;
+}
+
+button, input {
+    padding:0;
+    margin:0;
+    height:50px;
+    padding-left:10px;
+    padding-right:10px;
+    font-size:15px;
+    
+    cursor:pointer;
+
+    color:#fff;
+    background-color:rgb(0, 144, 214);
+   
+    border: 0;
+
+    border:2px solid rgb(0, 120, 180);
+
+}
+input {
+    height:46px;
+    background-color:#fff;
+    color: #000;
+    cursor:text;
+}
+button:hover {
+        background-color:rgb(50, 180, 234);
+        text-shadow: rgba(0,0,0,.2) 0 2px 0;
+}
+button:active {
+        text-decoration:none;
+        background-color:rgb(0, 144, 214);
+        text-shadow: rgba(0,0,0,.2) 0 2px 0;
+        box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5) inset;
+        height:50px;
+        border-color: rgb(0, 80, 130);
+}
+
+.widget {
+    background-color:#fff;
+    border-bottom:4px solid #9797bf;
+    padding:20px;
+    margin-bottom: 8px;
+}

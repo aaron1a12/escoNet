@@ -1,0 +1,1 @@
+<?phpheader('Content-type: text/plain');	echo date('G') .':'. intval(date('i')) .':'.  intval(date('s'));exit();

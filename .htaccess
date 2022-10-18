@@ -1,0 +1,63 @@
+<ifModule mod_deflate.c>
+    <filesMatch "\.(js|css|html|php|json|svg|png)$">
+        SetOutputFilter DEFLATE
+    </filesMatch>
+</ifModule>
+
+
+ErrorDocument 403 /main.php?page=/_inc/php/sys/error_pages/403.php
+ErrorDocument 404 /main.php?page=/_inc/php/sys/error_pages/404.php
+
+
+RewriteEngine On
+Options FollowSymLinks
+
+RewriteRule ^_inc/_config/ /main.php?page=/_inc/php/sys/error_pages/403.php
+
+
+
+
+RewriteRule ^funny/pic_of_the_day_thumb.jpg$ /funny/pic_of_the_day.php?size=0 [QSA,L]
+RewriteRule ^funny/pic_of_the_day.jpg$ /funny/pic_of_the_day.php?size=1 [QSA,L]
+
+RewriteRule ^webicons/(.*)/icon.png$ /links/webicon.php?icon=$1 [QSA,L]
+
+
+
+RewriteRule ^user/([0-9]+)/(.*)/photos/([0-9]+)/(.*)$ /main.php?page=user/photos/viewer.php&usr-id=$1&img-id=$3 [QSA,L]
+RewriteRule ^user/([0-9]+)/(.*)/photos/$ /main.php?page=user/photos/index.php&usr-id=$1 [QSA,L]
+RewriteRule ^user/([0-9]+)/(.*)/photos$ /main.php?page=user/photos/index.php&usr-id=$1 [QSA,L]
+RewriteRule ^user/([0-9]+)/(.*)/photos/favorites$ /main.php?page=user/photos/favorites.php&usr-id=$1 [QSA,L]
+RewriteRule ^user/([0-9]+)/(.*)$ /main.php?page=user/wall.php&usr-id=$1 [QSA,L]
+
+RewriteRule ^photos/albums/([0-9]+)/(.*)$ /main.php?page=photos/album-reader.php&id=$1 [QSA,L]
+
+RewriteRule ^blog/category/([0-9]+)/(.*)$ /main.php?page=blog/category.php&id=$1 [QSA,L]
+RewriteRule ^blog/author/([0-9]+)/(.*)$ /main.php?page=blog/author.php&usr-id=$1 [QSA,L]
+RewriteRule ^blog/([0-9]+)/([0-9]+)/(.*)$ /main.php?page=blog/reader.php&id=$2 [QSA,L]
+RewriteRule ^polls/([0-9]+)/(.*)$ /main.php?page=polls/reader.php&id=$1 [QSA,L]
+
+RewriteCond %{REQUEST_URI}   !/_inc
+RewriteCond %{REQUEST_URI}   !^$
+#RewriteCond %{REQUEST_URI}   !^/index.php$
+RewriteCond %{REQUEST_URI}   !^/main.php$
+RewriteCond %{REQUEST_URI}   !^/funny/pic_of_the_day.jpg$
+RewriteCond %{REQUEST_URI}   !^/favicon.ico$
+RewriteCond %{REQUEST_URI}   !^/robots.txt$
+RewriteCond %{REQUEST_URI}   !/cam
+RewriteCond %{REQUEST_URI}   !/dbadmin
+RewriteCond %{REQUEST_URI}   !/db
+RewriteCond %{REQUEST_URI}   !/_old
+RewriteCond %{REQUEST_URI}   !/gadgets/g/
+RewriteCond %{REQUEST_URI}   !/gamecritic/
+RewriteCond %{REQUEST_URI}   !/wiki/
+
+#RewriteRule ^(.*)$ main.php?page=$1 [QSA,L]
+RewriteRule ^(.*)$ main.php?page=$1 [QSA,L]
+
+
+
+#RewriteCond %{HTTP_HOST} !^$
+#RewriteCond %{HTTP_HOST} !^www\. [NC]
+#RewriteCond %{HTTPS}s ^on(s)|
+#RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [R=301, L]

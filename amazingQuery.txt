@@ -1,0 +1,4 @@
+SELECT esco_users.id, esco_users.username, esco_users.password, esco_users.name, esco_users.lastname, esco_users.time, esco_user_profiles.wm_linked
+FROM esco_users
+INNER JOIN esco_user_profiles
+ON esco_users.id=esco_user_profiles.user WHERE esco_users.id='1'

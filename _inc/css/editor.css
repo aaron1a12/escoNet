@@ -1,0 +1,32 @@
+@import url("/_inc/css/global.css");
+
+.blog-img-left, .blog-img-middle, .blog-img-right {
+    background-image: url(/_inc/img/editor-img-padding.gif);
+}
+.blog-img-left {
+    float:left; padding:20px; padding-left:0;
+}
+.blog-img-middle {
+    padding:20px; padding-left:0; padding-right:0;
+    width:100%;
+}
+.blog-img-right {
+    float:right; padding:20px; padding-right:0;
+}
+
+li {
+    padding-top:6px;
+    padding-bottom:6px;
+}
+
+body{ margin:171px; margin-right: 172px; margin-top:20px; margin-bottom: 20px }
+
+
+video {
+	width: 100% !important;
+}
+
+.mce-object-video {
+	width: 100% !important;
+	height:300px;
+}
